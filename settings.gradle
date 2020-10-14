@@ -1,0 +1,43 @@
+pluginManagement {
+    repositories {
+        google()
+        jcenter()
+        gradlePluginPortal()
+    }
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.namespace == "com.android") {
+                useModule("com.android.tools.build:gradle:${requested.version}")
+            }
+            if (requested.id.namespace == "org.jetbrains.kotlin") {
+                useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.0")
+            }
+        }
+    }
+}
+
+rootProject.name = "huge-gradle-project"
+
+includeBuild('build-logic-settings')
+includeBuild('build-logic-main')
+
+include('module10')
+include('module11')
+        
+includeBuild('module01') { name = 'module01' }
+includeBuild('module02') { name = 'module02' }
+includeBuild('module04') { name = 'module04' }
+includeBuild('module06') { name = 'module06' }
+includeBuild('module07') { name = 'module07' }
+includeBuild('module08') { name = 'module08' }
+includeBuild('module09') { name = 'module09' }
+includeBuild('module12') { name = 'module12' }
+includeBuild('module14') { name = 'module14' }
+includeBuild('module16') { name = 'module16' }
+includeBuild('module17') { name = 'module17' }
+includeBuild('module19') { name = 'module19' }
+includeBuild('module20') { name = 'module20' }
+includeBuild('module21') { name = 'module21' }
+includeBuild('module23') { name = 'module23' }
+
+

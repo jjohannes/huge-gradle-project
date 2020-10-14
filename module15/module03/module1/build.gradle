@@ -1,0 +1,30 @@
+plugins {
+    id("module-conventions")
+}
+
+plugins {
+    id("java-library")
+    id("java")
+}
+
+dependencies {
+    api("module15.module07:module1")
+    api("module15.module05:module2")
+    api("module15.module20:module1")
+    api("module15.module21:module1")
+    api("module15.module50:module1")
+    api("com.squareup.wire:wire-runtime:3.0.0")
+    implementation("module15.module07:module1")
+    implementation("module15.module05:module2")
+    implementation("module15.module20:module1")
+    implementation("module15.module21:module1")
+    implementation("module15.module50:module1")
+    implementation("com.squareup.wire:wire-runtime:3.0.0")
+    testImplementation("module06.module339.module3:module1")
+    testImplementation("module15.module07:module1")
+    testImplementation("module15.module05:module2")
+    testImplementation("module15.module20:module1")
+    testImplementation("module15.module21:module1")
+    testImplementation("module15.module50:module1")
+    testImplementation("com.squareup.wire:wire-runtime:3.0.0")
+}

@@ -1,0 +1,27 @@
+plugins {
+    id("module-conventions")
+}
+
+apply plugin: "com.android.library"
+apply plugin: "kotlin-android"
+            android {
+                compileSdkVersion = "android-29"
+                defaultConfig {
+                    minSdkVersion 25
+                    targetSdkVersion 25
+                }
+                compileOptions {
+                    sourceCompatibility JavaVersion.VERSION_1_8
+                    targetCompatibility JavaVersion.VERSION_1_8
+                }
+                kotlinOptions {
+    jvmTarget = "1.8"
+}
+            }
+dependencies {
+    implementation("module01:module33")
+    implementation("module06.module004:module4")
+    implementation("module07:module79")
+    implementation("module22.module01:module29")
+    testImplementation("module06.module339.module3:module1")
+}

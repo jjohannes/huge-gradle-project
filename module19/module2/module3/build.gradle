@@ -1,0 +1,1 @@
+subprojects { group = "module19.module2.module3" }

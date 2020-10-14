@@ -1,0 +1,42 @@
+plugins {
+    id("module-conventions")
+}
+
+apply plugin: "com.android.library"
+apply plugin: "kotlin-android"
+            android {
+                compileSdkVersion = "android-29"
+                defaultConfig {
+                    minSdkVersion 21
+                    targetSdkVersion 28
+                }
+                compileOptions {
+                    sourceCompatibility JavaVersion.VERSION_1_8
+                    targetCompatibility JavaVersion.VERSION_1_8
+                }
+                kotlinOptions {
+    jvmTarget = "1.8"
+}
+            }
+dependencies {
+    api("module06:module067")
+    api("module06:module192")
+    api("module06:module254")
+    api("module06.module342:module3")
+    api("module06.module339:module1")
+    api("com.squareup.wire:wire-runtime:3.0.0")
+    compileOnly("androidx.annotation:annotation:1.1.0")
+    compileOnly("org.jetbrains:annotations:13.0")
+    implementation("module06:module067")
+    implementation("module06:module192")
+    implementation("module06:module254")
+    implementation("module06.module327:module3")
+    implementation("module06.module342:module3")
+    implementation("module06.module339:module1")
+    implementation("module15.module36:module1")
+    implementation("com.squareup.wire:wire-runtime:3.0.0")
+    testImplementation("module06:module255")
+    testImplementation("module06.module297:module1")
+    testImplementation("module06.module339:module2")
+    testImplementation("module06.module339.module3:module1")
+}

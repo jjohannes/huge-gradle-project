@@ -1,0 +1,93 @@
+plugins {
+    id("module-conventions")
+}
+
+apply plugin: "com.android.library"
+android {
+    compileSdkVersion = "android-29"
+    defaultConfig {
+        minSdkVersion 25
+        targetSdkVersion 25
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    
+}
+dependencies {
+    annotationProcessor("com.google.dagger:dagger-compiler:2.28")
+    api("module06.module002:module3")
+    api("module06.module005:module3")
+    api("module06.module039:module5")
+    api("module06.module061:module4")
+    api("module06.module070:module3")
+    api("module06.module072:module4")
+    api("module06.module090:module2")
+    api("module06.module109:module1")
+    api("module06.module145:module4")
+    api("module06.module147.module4:module4")
+    api("module06.module187:module3")
+    api("module06.module185:module7")
+    api("module06.module220:module3")
+    api("module06.module284:module3")
+    api("module06.module313:module3")
+    api("module06.module313:module4")
+    api("module07:module36")
+    api("module07:module75")
+    api("module07.module77:module4")
+    api("main:module10")
+    api("module14:module1")
+    api("module22.module01.module01:module3")
+    api("module22.module01.module04:module2")
+    api("module22.module01.module05:module2")
+    api("module22.module01.module06:module2")
+    api("module22.module01.module07:module2")
+    api("module22.module01.module09:module3")
+    api("module22.module01.module09:module4")
+    api("module22.module01.module22:module1")
+    api("module22.module01:module25")
+    api("module22.module01:module26")
+    api("module22.module01.module28:module2")
+    api("module22.module01:module35")
+    api("module22.module04:module05")
+    api("module22.module04:module09")
+    api("com.google.dagger:dagger:2.28")
+    implementation("module06.module002:module3")
+    implementation("module06.module005:module3")
+    implementation("module06.module039:module5")
+    implementation("module06.module061:module4")
+    implementation("module06.module070:module3")
+    implementation("module06.module072:module4")
+    implementation("module06.module090:module2")
+    implementation("module06.module109:module1")
+    implementation("module06.module145:module4")
+    implementation("module06.module147.module4:module4")
+    implementation("module06.module187:module3")
+    implementation("module06.module185:module7")
+    implementation("module06.module220:module3")
+    implementation("module06.module284:module3")
+    implementation("module06.module313:module3")
+    implementation("module06.module313:module4")
+    implementation("module07:module36")
+    implementation("module07:module75")
+    implementation("module07.module77:module4")
+    implementation("main:module10")
+    implementation("module14:module1")
+    implementation("module22.module01.module01:module3")
+    implementation("module22.module01.module04:module2")
+    implementation("module22.module01.module05:module2")
+    implementation("module22.module01.module06:module2")
+    implementation("module22.module01.module07:module2")
+    implementation("module22.module01.module09:module3")
+    implementation("module22.module01.module09:module4")
+    implementation("module22.module01.module22:module1")
+    implementation("module22.module01:module25")
+    implementation("module22.module01:module26")
+    implementation("module22.module01.module28:module2")
+    implementation("module22.module01:module35")
+    implementation("module22.module04:module05")
+    implementation("module22.module04:module09")
+    implementation("com.google.dagger:dagger:2.28")
+    testImplementation("module06.module339.module3:module1")
+}

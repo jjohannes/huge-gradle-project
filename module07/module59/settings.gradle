@@ -1,0 +1,20 @@
+
+includeBuild('module01') { name = 'module07-module59-module01' }
+includeBuild('module02') { name = 'module07-module59-module02' }
+includeBuild('module03') { name = 'module07-module59-module03' }
+includeBuild('module04') { name = 'module07-module59-module04' }
+includeBuild('module05') { name = 'module07-module59-module05' }
+includeBuild('module06') { name = 'module07-module59-module06' }
+includeBuild('module07') { name = 'module07-module59-module07' }
+includeBuild('module08') { name = 'module07-module59-module08' }
+includeBuild('module09') { name = 'module07-module59-module09' }
+includeBuild('module10') { name = 'module07-module59-module10' }
+includeBuild('module11') { name = 'module07-module59-module11' }
+includeBuild('module12') { name = 'module07-module59-module12' }
+includeBuild('module13') { name = 'module07-module59-module13' }
+includeBuild('module14') { name = 'module07-module59-module14' }
+includeBuild('module15') { name = 'module07-module59-module15' }
+includeBuild('module16') { name = 'module07-module59-module16' }
+includeBuild('module17') { name = 'module07-module59-module17' }
+includeBuild('module18') { name = 'module07-module59-module18' }
+includeBuild('module19') { name = 'module07-module59-module19' }

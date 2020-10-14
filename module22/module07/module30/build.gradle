@@ -1,0 +1,83 @@
+plugins {
+    id("module-conventions")
+}
+
+apply plugin: "com.android.library"
+apply plugin: "kotlin-android"
+            android {
+                compileSdkVersion = "android-29"
+                defaultConfig {
+                    minSdkVersion 25
+                    targetSdkVersion 25
+                }
+                compileOptions {
+                    sourceCompatibility JavaVersion.VERSION_1_8
+                    targetCompatibility JavaVersion.VERSION_1_8
+                }
+                kotlinOptions {
+    jvmTarget = "1.8"
+}
+            }
+dependencies {
+    api("module05.module01.module14:module2")
+    api("module05.module07:module2")
+    api("module05.module08:module1")
+    api("module05.module10:module10")
+    api("module05.module14.module1:module2")
+    api("module06.module001:module3")
+    api("module08:module3")
+    api("module07.module03:module2")
+    api("module07:module84")
+    api("module09:module6")
+    api("main:module11")
+    api("module14:module2")
+    api("module22.module01:module13")
+    api("module22.module01:module18")
+    api("module22.module01:module19")
+    api("module22.module01:module27")
+    api("module22.module01:module37")
+    api("module22.module07.module05:module1")
+    api("module22.module07.module06:module1")
+    api("module22.module07.module09:module2")
+    api("module22.module07.module11:module1")
+    api("module22.module07:module16")
+    api("module22.module07:module27")
+    api("module22.module07:module29")
+    api("module22.module07:module31")
+    implementation("module05.module01.module14:module2")
+    implementation("module05.module07:module2")
+    implementation("module05.module08:module1")
+    implementation("module05.module10:module10")
+    implementation("module05.module14.module1:module2")
+    implementation("module06.module001:module3")
+    implementation("module06:module038")
+    implementation("module06.module122:module4")
+    implementation("module06.module143:module3")
+    implementation("module06.module187:module1")
+    implementation("module06:module332")
+    implementation("module06.module334:module1")
+    implementation("module08:module3")
+    implementation("module07.module03:module2")
+    implementation("module07.module22:module1")
+    implementation("module07.module44:module2")
+    implementation("module07:module84")
+    implementation("module07:module89")
+    implementation("module09:module6")
+    implementation("main:module11")
+    implementation("module14:module2")
+    implementation("module22.module01:module13")
+    implementation("module22.module01:module18")
+    implementation("module22.module01:module19")
+    implementation("module22.module01:module27")
+    implementation("module22.module01:module37")
+    implementation("module22.module07.module05:module1")
+    implementation("module22.module07.module06:module1")
+    implementation("module22.module07.module09:module2")
+    implementation("module22.module07.module11:module1")
+    implementation("module22.module07:module16")
+    implementation("module22.module07:module27")
+    implementation("module22.module07:module29")
+    implementation("module22.module07:module31")
+    implementation("androidx.test.espresso:espresso-contrib:3.1.0")
+    testImplementation("module06.module339.module3:module1")
+}

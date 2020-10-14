@@ -1,0 +1,32 @@
+//plugins {
+//    id("settings-conventions")
+//}
+// This should be from the plugin above, see: https://github.com/gradle/gradle/issues/14562
+pluginManagement {
+    repositories {
+        google()
+        jcenter()
+        gradlePluginPortal()
+    }
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.namespace == "com.android") {
+                useModule("com.android.tools.build:gradle:${requested.version}")
+            }
+            if (requested.id.namespace == "org.jetbrains.kotlin") {
+                useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.0")
+            }
+        }
+    }
+}
+
+include('module9')
+
+includeBuild('module1') { name = 'module19-module2-module1' }
+includeBuild('module2') { name = 'module19-module2-module2' }
+includeBuild('module3') { name = 'module19-module2-module3' }
+includeBuild('module4') { name = 'module19-module2-module4' }
+includeBuild('module5') { name = 'module19-module2-module5' }
+includeBuild('module6') { name = 'module19-module2-module6' }
+includeBuild('module7') { name = 'module19-module2-module7' }
+includeBuild('module8') { name = 'module19-module2-module8' }

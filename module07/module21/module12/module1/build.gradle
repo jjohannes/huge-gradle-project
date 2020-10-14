@@ -1,0 +1,35 @@
+plugins {
+    id("module-conventions")
+}
+
+apply plugin: "com.android.library"
+apply plugin: "kotlin-android"
+            android {
+                compileSdkVersion = "android-29"
+                defaultConfig {
+                    minSdkVersion 21
+                    targetSdkVersion 28
+                }
+                compileOptions {
+                    sourceCompatibility JavaVersion.VERSION_1_8
+                    targetCompatibility JavaVersion.VERSION_1_8
+                }
+                kotlinOptions {
+    jvmTarget = "1.8"
+}
+            }
+dependencies {
+    api("module01:module35")
+    api("module05.module03:module2")
+    api("module07.module21.module12:module5")
+    api("module15.module21:module1")
+    api("javax.inject:javax.inject:1")
+    api("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.72")
+    implementation("module01:module35")
+    implementation("module05.module03:module2")
+    implementation("module07.module21.module12:module5")
+    implementation("module15.module21:module1")
+    implementation("javax.inject:javax.inject:1")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.72")
+    testImplementation("module06.module339.module3:module1")
+}

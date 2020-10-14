@@ -1,0 +1,44 @@
+plugins {
+    id("module-conventions")
+}
+
+apply plugin: "com.android.library"
+apply plugin: "kotlin-android"
+            android {
+                compileSdkVersion = "android-29"
+                defaultConfig {
+                    minSdkVersion 21
+                    targetSdkVersion 28
+                }
+                compileOptions {
+                    sourceCompatibility JavaVersion.VERSION_1_8
+                    targetCompatibility JavaVersion.VERSION_1_8
+                }
+                kotlinOptions {
+    jvmTarget = "1.8"
+}
+            }
+dependencies {
+    api("module19.module2.module4:module4")
+    api("javax.inject:javax.inject:1")
+    api("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.72")
+    implementation("module06:module207")
+    implementation("module06.module230:module2")
+    implementation("module06:module254")
+    implementation("module06:module315")
+    implementation("module06.module339:module1")
+    implementation("module06:module348")
+    implementation("module06.module353:module3")
+    implementation("module06.module353:module5")
+    implementation("module19.module2.module4:module4")
+    implementation("com.squareup.coordinators:coordinators:0.5")
+    implementation("com.squareup.workflow:workflow-core-jvm:0.23.2")
+    implementation("javax.inject:javax.inject:1")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.72")
+    testImplementation("module06.module342:module3")
+    testImplementation("module06.module339.module3:module1")
+    testImplementation("com.google.truth:truth:1.0")
+    testImplementation("com.squareup.workflow:workflow-testing-jvm:0.23.2")
+    testImplementation("junit:junit:4.13")
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit:1.3.72")
+}

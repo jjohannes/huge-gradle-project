@@ -1,0 +1,45 @@
+plugins {
+    id("module-conventions")
+}
+
+apply plugin: "com.android.library"
+android {
+    compileSdkVersion = "android-29"
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    
+}
+dependencies {
+    annotationProcessor("com.google.dagger:dagger-compiler:2.28")
+    api("module06:module192")
+    api("module06:module194")
+    api("module06.module294:module1")
+    api("module06.module314:module1")
+    api("module06.module342:module3")
+    api("module06:module345")
+    api("module06:module359")
+    api("com.google.dagger:dagger:2.28")
+    api("io.reactivex.rxjava2:rxjava:2.2.19")
+    implementation("module06.module086:module1")
+    implementation("module06:module192")
+    implementation("module06:module194")
+    implementation("module06:module254")
+    implementation("module06.module294:module1")
+    implementation("module06.module314:module1")
+    implementation("module06.module342:module3")
+    implementation("module06:module345")
+    implementation("module06:module359")
+    implementation("module15.module36:module1")
+    implementation("com.google.dagger:dagger:2.28")
+    implementation("io.reactivex.rxjava2:rxjava:2.2.19")
+    testImplementation("module06.module339.module3:module1")
+    testImplementation("com.google.truth:truth:1.0")
+    testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0")
+    testImplementation("junit:junit:4.13")
+}

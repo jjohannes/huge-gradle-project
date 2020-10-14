@@ -1,0 +1,109 @@
+//plugins {
+//    id("settings-conventions")
+//}
+// This should be from the plugin above, see: https://github.com/gradle/gradle/issues/14562
+pluginManagement {
+    repositories {
+        google()
+        jcenter()
+        gradlePluginPortal()
+    }
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.namespace == "com.android") {
+                useModule("com.android.tools.build:gradle:${requested.version}")
+            }
+            if (requested.id.namespace == "org.jetbrains.kotlin") {
+                useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.0")
+            }
+        }
+    }
+}
+
+include('module01')
+include('module02')
+include('module04')
+include('module14')
+include('module16')
+include('module24')
+include('module25')
+include('module26')
+include('module28')
+include('module34')
+include('module35')
+include('module36')
+include('module37')
+include('module38')
+include('module40')
+include('module45')
+include('module46')
+include('module48')
+include('module54')
+include('module58')
+include('module60')
+include('module62')
+include('module63')
+include('module64')
+include('module66')
+include('module68')
+include('module70')
+include('module71')
+include('module72')
+include('module73')
+include('module75')
+include('module76')
+include('module78')
+include('module79')
+include('module82')
+include('module83')
+include('module84')
+include('module85')
+include('module88')
+include('module89')
+
+includeBuild('module03') { name = 'module07-module03' }
+includeBuild('module05') { name = 'module07-module05' }
+includeBuild('module06') { name = 'module07-module06' }
+includeBuild('module07') { name = 'module07-module07' }
+includeBuild('module08') { name = 'module07-module08' }
+includeBuild('module09') { name = 'module07-module09' }
+includeBuild('module10') { name = 'module07-module10' }
+includeBuild('module11') { name = 'module07-module11' }
+includeBuild('module12') { name = 'module07-module12' }
+includeBuild('module13') { name = 'module07-module13' }
+includeBuild('module15') { name = 'module07-module15' }
+includeBuild('module17') { name = 'module07-module17' }
+includeBuild('module18') { name = 'module07-module18' }
+includeBuild('module19') { name = 'module07-module19' }
+includeBuild('module22') { name = 'module07-module22' }
+includeBuild('module23') { name = 'module07-module23' }
+includeBuild('module27') { name = 'module07-module27' }
+includeBuild('module29') { name = 'module07-module29' }
+includeBuild('module30') { name = 'module07-module30' }
+includeBuild('module31') { name = 'module07-module31' }
+includeBuild('module32') { name = 'module07-module32' }
+includeBuild('module33') { name = 'module07-module33' }
+includeBuild('module41') { name = 'module07-module41' }
+includeBuild('module42') { name = 'module07-module42' }
+includeBuild('module43') { name = 'module07-module43' }
+includeBuild('module44') { name = 'module07-module44' }
+includeBuild('module47') { name = 'module07-module47' }
+includeBuild('module49') { name = 'module07-module49' }
+includeBuild('module50') { name = 'module07-module50' }
+includeBuild('module51') { name = 'module07-module51' }
+includeBuild('module52') { name = 'module07-module52' }
+includeBuild('module53') { name = 'module07-module53' }
+includeBuild('module55') { name = 'module07-module55' }
+includeBuild('module56') { name = 'module07-module56' }
+includeBuild('module57') { name = 'module07-module57' }
+includeBuild('module59') { name = 'module07-module59' }
+includeBuild('module61') { name = 'module07-module61' }
+includeBuild('module65') { name = 'module07-module65' }
+includeBuild('module67') { name = 'module07-module67' }
+includeBuild('module69') { name = 'module07-module69' }
+includeBuild('module74') { name = 'module07-module74' }
+includeBuild('module77') { name = 'module07-module77' }
+includeBuild('module80') { name = 'module07-module80' }
+includeBuild('module81') { name = 'module07-module81' }
+includeBuild('module86') { name = 'module07-module86' }
+includeBuild('module87') { name = 'module07-module87' }

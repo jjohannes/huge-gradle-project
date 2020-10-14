@@ -1,0 +1,24 @@
+plugins {
+    id("module-conventions")
+}
+
+apply plugin: "com.android.library"
+android {
+    compileSdkVersion = "android-29"
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    
+}
+dependencies {
+    api("module17.module10:module1")
+    api("module17.module08:module2")
+    implementation("module17.module10:module1")
+    implementation("module17.module08:module2")
+    testImplementation("module06.module339.module3:module1")
+}

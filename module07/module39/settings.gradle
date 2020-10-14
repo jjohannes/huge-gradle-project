@@ -1,0 +1,6 @@
+
+includeBuild('module1') { name = 'module07-module39-module1' }
+includeBuild('module2') { name = 'module07-module39-module2' }
+includeBuild('module3') { name = 'module07-module39-module3' }
+includeBuild('module4') { name = 'module07-module39-module4' }
+includeBuild('module5') { name = 'module07-module39-module5' }
