@@ -1,7 +1,3 @@
-plugins {
-    id("module-conventions")
-}
-
 apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
             android {
@@ -19,21 +15,21 @@ apply plugin: "kotlin-android"
 }
             }
 dependencies {
-    api("module05.module01.module12:module4")
-    api("module05.module01.module13:module3")
-    api("module05.module10:module12")
-    api("module06.module238:module5")
-    api("module06:module260")
-    api("module06.module339:module1")
+    api(project(":module05:module01:module12:module4"))
+    api(project(":module05:module01:module13:module3"))
+    api(project(":module05:module10:module12"))
+    api(project(":module06:module238:module5"))
+    api(project(":module06:module260"))
+    api(project(":module06:module339:module1"))
     api("javax.inject:javax.inject:1")
     api("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.72")
-    implementation("module05.module01.module12:module4")
-    implementation("module05.module01.module13:module3")
-    implementation("module05.module10:module12")
-    implementation("module06.module238:module5")
-    implementation("module06:module260")
-    implementation("module06.module339:module1")
+    implementation(project(":module05:module01:module12:module4"))
+    implementation(project(":module05:module01:module13:module3"))
+    implementation(project(":module05:module10:module12"))
+    implementation(project(":module06:module238:module5"))
+    implementation(project(":module06:module260"))
+    implementation(project(":module06:module339:module1"))
     implementation("javax.inject:javax.inject:1")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.72")
-    testImplementation("module06.module339.module3:module1")
+    testImplementation(project(":module06:module339:module3:module1"))
 }

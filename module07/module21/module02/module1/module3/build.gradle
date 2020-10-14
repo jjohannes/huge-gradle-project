@@ -1,7 +1,3 @@
-plugins {
-    id("module-conventions")
-}
-
 apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
             android {
@@ -19,26 +15,26 @@ apply plugin: "kotlin-android"
 }
             }
 dependencies {
-    api("module06.module013:module6")
-    api("module06:module067")
-    api("module06.module109:module1")
-    api("module06:module326")
-    api("module07.module21.module02.module1:module5")
+    api(project(":module06:module013:module6"))
+    api(project(":module06:module067"))
+    api(project(":module06:module109:module1"))
+    api(project(":module06:module326"))
+    api(project(":module07:module21:module02:module1:module5"))
     api("javax.inject:javax.inject:1")
     api("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.72")
-    implementation("module06.module013:module6")
-    implementation("module06:module067")
-    implementation("module06.module109:module1")
-    implementation("module06.module201:module1")
-    implementation("module06:module326")
-    implementation("module07.module21.module02.module1:module5")
+    implementation(project(":module06:module013:module6"))
+    implementation(project(":module06:module067"))
+    implementation(project(":module06:module109:module1"))
+    implementation(project(":module06:module201:module1"))
+    implementation(project(":module06:module326"))
+    implementation(project(":module07:module21:module02:module1:module5"))
     implementation("com.jakewharton.rxrelay2:rxrelay:2.1.0")
     implementation("com.jakewharton.timber:timber:4.6.1")
     implementation("javax.inject:javax.inject:1")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.72")
-    testImplementation("module06.module197:module1")
-    testImplementation("module06.module282:module2")
-    testImplementation("module06.module339.module3:module1")
+    testImplementation(project(":module06:module197:module1"))
+    testImplementation(project(":module06:module282:module2"))
+    testImplementation(project(":module06:module339:module3:module1"))
     testImplementation("com.google.truth:truth:1.0")
     testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0")
     testImplementation("junit:junit:4.13")

@@ -1,7 +1,3 @@
-plugins {
-    id("module-conventions")
-}
-
 apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
             android {
@@ -19,9 +15,9 @@ apply plugin: "kotlin-android"
 }
             }
 dependencies {
-    api("module15.module36:module1")
+    api(project(":module15:module36:module1"))
     api("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.72")
-    implementation("module15.module36:module1")
+    implementation(project(":module15:module36:module1"))
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.72")
-    testImplementation("module06.module339.module3:module1")
+    testImplementation(project(":module06:module339:module3:module1"))
 }

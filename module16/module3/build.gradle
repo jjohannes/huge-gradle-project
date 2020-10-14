@@ -1,7 +1,3 @@
-plugins {
-    id("module-conventions")
-}
-
 apply plugin: "com.android.application"
 android {
     compileSdkVersion = "android-29"
@@ -19,9 +15,9 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.1.0")
     androidTestImplementation("androidx.test:rules:1.1.0")
     androidTestImplementation("androidx.test:runner:1.1.0")
-    api("module16:module4")
+    api(project(":module16:module4"))
     api("com.squareup.haha:haha:2.0.3")
-    implementation("module16:module4")
+    implementation(project(":module16:module4"))
     implementation("com.squareup.haha:haha:2.0.3")
-    testImplementation("module06.module339.module3:module1")
+    testImplementation(project(":module06:module339:module3:module1"))
 }

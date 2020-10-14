@@ -1,0 +1,23 @@
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.4")
+        classpath('com.android.tools.build:gradle:4.2.0-alpha11')
+    }
+}
+
+plugins {
+    id("org.jetbrains.kotlin.jvm") version "1.4.0"  apply false 
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+}

@@ -1,4 +1,0 @@
-
-includeBuild('module1') { name = 'module17-module12-module1' }
-includeBuild('module2') { name = 'module17-module12-module2' }
-includeBuild('module3') { name = 'module17-module12-module3' }

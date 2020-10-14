@@ -1,9 +1,0 @@
-
-includeBuild('module02') { name = 'module07-module20-module02' }
-includeBuild('module03') { name = 'module07-module20-module03' }
-includeBuild('module04') { name = 'module07-module20-module04' }
-includeBuild('module05') { name = 'module07-module20-module05' }
-includeBuild('module06') { name = 'module07-module20-module06' }
-includeBuild('module07') { name = 'module07-module20-module07' }
-includeBuild('module08') { name = 'module07-module20-module08' }
-includeBuild('module10') { name = 'module07-module20-module10' }

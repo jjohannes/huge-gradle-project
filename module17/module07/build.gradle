@@ -1,7 +1,3 @@
-plugins {
-    id("module-conventions")
-}
-
 apply plugin: "com.android.application"
 android {
     compileSdkVersion = "android-29"
@@ -16,5 +12,5 @@ android {
     
 }
 dependencies {
-    testImplementation("module06.module339.module3:module1")
+    testImplementation(project(":module06:module339:module3:module1"))
 }

@@ -1,7 +1,3 @@
-plugins {
-    id("module-conventions")
-}
-
 apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
             android {
@@ -19,19 +15,19 @@ apply plugin: "kotlin-android"
 }
             }
 dependencies {
-    api("module12:module16")
-    implementation("module06.module017:module6")
-    implementation("module06:module021")
-    implementation("module06:module167")
-    implementation("module06:module349")
-    implementation("module08:module3")
-    implementation("module07:module40")
-    implementation("module09:module6")
-    implementation("main:module11")
-    implementation("module12:module04")
-    implementation("module12:module16")
-    implementation("module12:module17")
-    implementation("module12:module20")
+    api(project(":module12:module16"))
+    implementation(project(":module06:module017:module6"))
+    implementation(project(":module06:module021"))
+    implementation(project(":module06:module167"))
+    implementation(project(":module06:module349"))
+    implementation(project(":module08:module3"))
+    implementation(project(":module07:module40"))
+    implementation(project(":module09:module6"))
+    implementation(project(":module11"))
+    implementation(project(":module12:module04"))
+    implementation(project(":module12:module16"))
+    implementation(project(":module12:module17"))
+    implementation(project(":module12:module20"))
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.72")
-    testImplementation("module06.module339.module3:module1")
+    testImplementation(project(":module06:module339:module3:module1"))
 }

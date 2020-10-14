@@ -1,7 +1,3 @@
-plugins {
-    id("module-conventions")
-}
-
 apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
             android {
@@ -19,18 +15,18 @@ apply plugin: "kotlin-android"
 }
             }
 dependencies {
-    api("module07.module20.module08:module5")
+    api(project(":module07:module20:module08:module5"))
     api("javax.inject:javax.inject:1")
     api("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.72")
-    implementation("module06.module337:module3")
-    implementation("module07.module20.module08:module5")
+    implementation(project(":module06:module337:module3"))
+    implementation(project(":module07:module20:module08:module5"))
     implementation("androidx.core:core-ktx:1.2.0")
     implementation("javax.inject:javax.inject:1")
     implementation("org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.3.72")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.72")
-    testImplementation("module06:module255")
-    testImplementation("module06.module339.module3:module1")
-    testImplementation("module07.module20.module02:module2")
+    testImplementation(project(":module06:module255"))
+    testImplementation(project(":module06:module339:module3:module1"))
+    testImplementation(project(":module07:module20:module02:module2"))
     testImplementation("com.google.truth:truth:1.0")
     testImplementation("com.squareup.workflow:workflow-testing-jvm:0.23.2")
     testImplementation("junit:junit:4.13")

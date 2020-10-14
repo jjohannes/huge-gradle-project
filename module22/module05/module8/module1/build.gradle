@@ -1,7 +1,3 @@
-plugins {
-    id("module-conventions")
-}
-
 apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
             android {
@@ -19,20 +15,20 @@ apply plugin: "kotlin-android"
 }
             }
 dependencies {
-    api("module06.module153:module4")
-    api("module09:module5")
-    api("module22.module01:module18")
-    api("module22.module05.module8:module3")
+    api(project(":module06:module153:module4"))
+    api(project(":module09:module5"))
+    api(project(":module22:module01:module18"))
+    api(project(":module22:module05:module8:module3"))
     api("javax.inject:javax.inject:1")
     api("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.72")
-    implementation("module06.module153:module4")
-    implementation("module09:module5")
-    implementation("module22.module01:module18")
-    implementation("module22.module05.module8:module3")
+    implementation(project(":module06:module153:module4"))
+    implementation(project(":module09:module5"))
+    implementation(project(":module22:module01:module18"))
+    implementation(project(":module22:module05:module8:module3"))
     implementation("javax.inject:javax.inject:1")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.72")
-    testImplementation("module06.module197:module1")
-    testImplementation("module06.module339.module3:module1")
+    testImplementation(project(":module06:module197:module1"))
+    testImplementation(project(":module06:module339:module3:module1"))
     testImplementation("com.google.truth:truth:1.0")
     testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0")
     testImplementation("junit:junit:4.13")
