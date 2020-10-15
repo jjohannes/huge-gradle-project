@@ -26,18 +26,25 @@ include('module11')
         
 includeBuild('module01') { name = 'module01' }
 includeBuild('module02') { name = 'module02' }
+includeBuild('module03') { name = 'module03' }
 includeBuild('module04') { name = 'module04' }
+includeBuild('module05') { name = 'module05' }
 includeBuild('module06') { name = 'module06' }
 includeBuild('module07') { name = 'module07' }
 includeBuild('module08') { name = 'module08' }
 includeBuild('module09') { name = 'module09' }
 includeBuild('module12') { name = 'module12' }
+includeBuild('module13') { name = 'module13' }
 includeBuild('module14') { name = 'module14' }
+includeBuild('module15') { name = 'module15' }
 includeBuild('module16') { name = 'module16' }
 includeBuild('module17') { name = 'module17' }
+includeBuild('module18') { name = 'module18' }
 includeBuild('module19') { name = 'module19' }
 includeBuild('module20') { name = 'module20' }
 includeBuild('module21') { name = 'module21' }
+includeBuild('module22') { name = 'module22' }
 includeBuild('module23') { name = 'module23' }
+includeBuild('module24') { name = 'module24' }
 
 

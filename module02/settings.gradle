@@ -51,6 +51,7 @@ includeBuild('module18') { name = 'module02-module18' }
 includeBuild('module21') { name = 'module02-module21' }
 includeBuild('module22') { name = 'module02-module22' }
 includeBuild('module23') { name = 'module02-module23' }
+includeBuild('module24') { name = 'module02-module24' }
 includeBuild('module25') { name = 'module02-module25' }
 includeBuild('module26') { name = 'module02-module26' }
 includeBuild('module28') { name = 'module02-module28' }

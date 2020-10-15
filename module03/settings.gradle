@@ -1,5 +1,13 @@
 
+includeBuild('module01') { name = 'module03-module01' }
 includeBuild('module02') { name = 'module03-module02' }
 includeBuild('module03') { name = 'module03-module03' }
 includeBuild('module04') { name = 'module03-module04' }
 includeBuild('module05') { name = 'module03-module05' }
+includeBuild('module06') { name = 'module03-module06' }
+includeBuild('module07') { name = 'module03-module07' }
+includeBuild('module08') { name = 'module03-module08' }
+includeBuild('module09') { name = 'module03-module09' }
+includeBuild('module10') { name = 'module03-module10' }
+includeBuild('module11') { name = 'module03-module11' }
+includeBuild('module12') { name = 'module03-module12' }

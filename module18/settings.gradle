@@ -1,3 +1,4 @@
 
 includeBuild('module1') { name = 'module18-module1' }
+includeBuild('module2') { name = 'module18-module2' }
 includeBuild('module3') { name = 'module18-module3' }
